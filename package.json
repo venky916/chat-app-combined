@@ -7,8 +7,7 @@
     "start": "node backend/app.js",
     "dev": "nodemon backend/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && npm install --prefix frontend && npm --prefix frontend run build"
-
+    "build": "npm install && npm install --prefix frontend --include=dev && npm run build --prefix frontend"
   },
   "author": "Venkatesh Maliga",
   "license": "ISC",
